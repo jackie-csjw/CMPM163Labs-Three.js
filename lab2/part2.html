@@ -18,7 +18,7 @@ src="../three.js-master/examples/js/loaders/GLTFLoader.js"></script>
             var renderer = new THREE.WebGLRenderer();
             renderer.setSize(window.innerWidth, window.innerHeight);
             document.body.appendChild(renderer.domElement);
-            camera.position.z = 200;
+            camera.position.z = 166;
             
             var light = new THREE.PointLight(0xffffff, 4, 10000);
             light.position.set(50, 50, 50);
@@ -54,6 +54,10 @@ src="../three.js-master/examples/js/loaders/GLTFLoader.js"></script>
             }, function (error) {
             console.error(error);
             });  
+            
+            gltf.scene.position.x = -50;
+            gltf.scene.rotation.y = -5;
+
 
             function animate() {
                     requestAnimationFrame(animate);
