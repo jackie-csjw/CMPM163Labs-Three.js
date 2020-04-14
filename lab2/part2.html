@@ -24,9 +24,9 @@ src="../three.js-master/examples/js/loaders/GLTFLoader.js"></script>
             light.position.set(50, 50, 50);
             scene.add(light);
             
-            var light2 = new THREE.PointLight(0xa5f2f3, 1, 1000);
-            light.position.set(50, 50, 50);
-            scene.add(light2);
+            //var light2 = new THREE.PointLight(0xa5f2f3, 1, 1000);
+            //light.position.set(50, 50, 50);
+            //scene.add(light2);
 
             var loader = new THREE.GLTFLoader();
             loader.load('dog.glb', function (gltf) {
@@ -36,6 +36,14 @@ src="../three.js-master/examples/js/loaders/GLTFLoader.js"></script>
             }, function (error) {
             console.error(error);
             });
+            
+            loader.load('aspirateur.glb', function (gltf) {
+            scene.add(gltf.scene);
+            }, function (xhr) {
+            console.log((xhr.loaded / xhr.total * 100) + '% loaded' );
+            }, function (error) {
+            console.error(error);
+            });    
 
             function animate() {
                     requestAnimationFrame(animate);
