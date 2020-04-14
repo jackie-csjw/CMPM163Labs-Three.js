@@ -55,7 +55,10 @@ src="../three.js-master/examples/js/loaders/GLTFLoader.js"></script>
             
             var loader3 = new THREE.GLTFLoader();
             loader3.load('chair.glb', function (gltf) {
-            gltf.scene.position.x = 150; 
+            gltf.scene.position.x = 150;
+            gltf.scene.scale.x = 5.3;
+            gltf.scene.scale.y = 5.3;
+            gltf.scene.scale.z = 5.3;
             scene.add(gltf.scene);
             }, function (xhr) {
             console.log((xhr.loaded / xhr.total * 100) + '% loaded' );
