@@ -45,7 +45,7 @@ src="../three.js-master/examples/js/loaders/GLTFLoader.js"></script>
             
             var loader2 = new THREE.GLTFLoader();
             loader2.load('aspirateur.glb', function (gltf) {
-            gltf.scene.position.x = -50; 
+            gltf.scene.position.x = -150; 
             scene.add(gltf.scene);
             }, function (xhr) {
             console.log((xhr.loaded / xhr.total * 100) + '% loaded' );
