@@ -25,9 +25,9 @@ src="../three.js-master/examples/js/loaders/GLTFLoader.js"></script>
             light.position.set(50, 50, 50);
             scene.add(light);
             
-            //var light2 = new THREE.PointLight(0xa5f2f3, 1, 1000);
-            //light.position.set(50, 50, 50);
-            //scene.add(light2);
+            var light2 = new THREE.PointLight(0xa5f2f3, 2, 2500);
+            light.position.set(50, 50, 50);
+            scene.add(light2);
 
             var loader = new THREE.GLTFLoader();
             loader.load('dog.glb', function (gltf) {
@@ -57,10 +57,10 @@ src="../three.js-master/examples/js/loaders/GLTFLoader.js"></script>
             loader3.load('poele.glb', function (gltf) {
             gltf.scene.position.x = 150;
             gltf.scene.rotation.y = -27;
-            gltf.scene.rotation.z = 27;
-            gltf.scene.scale.x = 1.3;
-            gltf.scene.scale.y = 1.3;
-            gltf.scene.scale.z = 1.3;
+            gltf.scene.rotation.z = -16;
+            gltf.scene.scale.x = 1.7;
+            gltf.scene.scale.y = 1.7;
+            gltf.scene.scale.z = 1.7;
             scene.add(gltf.scene);
             }, function (xhr) {
             console.log((xhr.loaded / xhr.total * 100) + '% loaded' );
