@@ -24,9 +24,9 @@ src="../three.js-master/examples/js/loaders/GLTFLoader.js"></script>
             light.position.set(50, 50, 50);
             scene.add(light);
             
-            //var light2 = new THREE.PointLight(0xe16d5b, 1, 1000);
-            //light.position.set(50, 50, 50);
-            //scene.add(light2);
+            var light2 = new THREE.PointLight(0xa5f2f3, 1, 1000);
+            light.position.set(50, 50, 50);
+            scene.add(light2);
 
             var loader = new THREE.GLTFLoader();
             loader.load('dog.glb', function (gltf) {
