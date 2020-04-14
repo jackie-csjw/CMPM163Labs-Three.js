@@ -25,14 +25,17 @@
           scene.add(cube);
           camera.position.z = 5; //this moves the camera towards the viewer
 
-          function animate() {
-          requestAnimationFrame(animate);
-          renderer.render(scene, camera);
-          }
+          function animate()
+            {
+                geometry.rotateX(0.01);
+                geometry.rotateY(0.01);
+          
+                requestAnimationFrame(animate);
+                renderer.render(scene, camera);
+            }
           animate();
             
-          geometry.rotateX(0.01);
-          geometry.rotateY(0.01);
+          
 
         </script>
     </body>
