@@ -55,14 +55,13 @@ src="../three.js-master/examples/js/loaders/GLTFLoader.js"></script>
             
             var loader3 = new THREE.GLTFLoader();
             loader3.load('chair.glb', function (gltf) {
+            gltf.scene.position.x = 150; 
             scene.add(gltf.scene);
             }, function (xhr) {
             console.log((xhr.loaded / xhr.total * 100) + '% loaded' );
             }, function (error) {
             console.error(error);
             });  
-            
-
 
             function animate() {
                     requestAnimationFrame(animate);
