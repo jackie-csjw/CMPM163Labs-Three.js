@@ -79,7 +79,7 @@
 			precision: "mediump"});
 
 		mesh3 = new THREE.Mesh(geometry3, material3);
-		mesh3.position.x = 2;
+		mesh3.position.x = 3;
 		scene.add(mesh3);
 	    }    
 	}
@@ -96,7 +96,6 @@
 		    vshader = data;
 		    count += 1;
 		    addCoolCube(); // we will write this method
-		    addCoolCube3();
 		},
 	// onProgress callback
 	    function (xhr) {
@@ -124,11 +123,36 @@
 		console.error('An error happened');
 	    });
 		
-	loader.load('shaders/fragmentShader2.frag',
+		
+		
+		
+	THREE.Cache.enabled = true;
+	var count = 0;
+	var loader2 = new THREE.FileLoader();
+	var fshader2, vshader2;
+		
+	loader2.load('shaders/vertexShader.vert',
 	// onLoad callback
 	    function (data) {
 		    console.log(data); // output the text to the console
-		    fshader = data;
+		    vshader2 = data;
+		    count += 1;
+		    addCoolCube3();
+		},
+	// onProgress callback
+	    function (xhr) {
+		console.log((xhr.loaded/xhr.total * 100)+ '% loaded');
+	    },
+	// onError callback
+	    function (err) {
+		console.error('An error happened');
+	    });
+	
+	loader2.load('shaders/fragmentShader2.frag',
+	// onLoad callback
+	    function (data) {
+		    console.log(data); // output the text to the console
+		    fshader2 = data;
 		    count += 1;
 		    addCoolCube3(); // we will write this method
 		},
