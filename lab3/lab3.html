@@ -19,11 +19,29 @@
             document.body.appendChild(renderer.domElement);
             camera.position.z = 5;
             
-            // setup the cube
-            var geometry = new THREE.BoxGeometry();
-            var material = new THREE.MeshPhongMaterial( { color: 0xdddddd, specular: 0x00ff00, shininess: 30 });
-            var cube = new THREE.Mesh( geometry, material );
-            scene.add(cube);
+            // setup the first cube
+            var geometry1 = new THREE.BoxGeometry();
+            var material1 = new THREE.MeshPhongMaterial( { color: 0xdddddd, specular: 0x00ff00, shininess: 30 });
+            var cube1 = new THREE.Mesh( geometry1, material1 );
+            scene.add(cube1);
+            
+            //setup the second cube
+            var geo2 = new THREE.BoxGeometry();
+            var mat2 = new THREE.MeshPhysicalMaterial( {
+					map: null,
+					color: 0x0000ff,
+					metalness: 1,
+					roughness: 0,
+					opacity: 0.5,
+					side: THREE.BackSide,
+					transparent: true,
+					envMapIntensity: 5,
+					premultipliedAlpha: true
+					// TODO: Add custom blend mode that modulates background color by this materials color.
+				} );
+            //var mat2 = new THREE.MeshPhongMaterial
+            var cube2 = new THREE.Mesh(geo2, mat2);
+            scene.add(cube2);
 
             // add the light
             var light = new THREE.PointLight(0xffffff, 1, 1000);
@@ -33,8 +51,8 @@
             function animate()
             {
                 requestAnimationFrame(animate);
-                geometry.rotateX(0.01);
-                geometry.rotateY(0.01);
+                geometry1.rotateX(0.01);
+                geometry1.rotateY(0.01);
                 renderer.render(scene, camera);
             }
             animate();
