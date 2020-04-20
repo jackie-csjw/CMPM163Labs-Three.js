@@ -23,7 +23,7 @@
             var geometry = new THREE.BoxGeometry();
 	    geometry.translate(-5, 0, 0);
             var material = new THREE.MeshPhongMaterial( { color: 0xdddddd, specular: 0x00ff00, shininess: 30 });
-            var cube1 = new THREE.Mesh( geometry, material );
+            var cube = new THREE.Mesh( geometry, material );
             scene.add(cube);
             
             //setup the second cube
