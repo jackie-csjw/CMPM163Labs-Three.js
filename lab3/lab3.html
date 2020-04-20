@@ -42,10 +42,17 @@
 
 	function addCoolCube() {
 		if(count == 2) {
+		    let uniforms = {
+			colorB: {type: 'vec3', value: new 
+		THREE.Color(0x63A08B)},
+			colorA: {type: 'vec3', value: new 
+		THREE.Color(0xEA5154)}
+		     };
 		    geometry1 = new THREE.BoxGeometry(1, 1, 1);
 		material1 =  new THREE.ShaderMaterial({
+			uniforms: uniforms,
 			fragmentShader: fshader,
-	vertexShader: vshader,
+	                vertexShader: vshader,
 			precision: "mediump"});
 
 		mesh1 = new THREE.Mesh(geometry1, material1);
