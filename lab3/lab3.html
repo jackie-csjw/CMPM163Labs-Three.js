@@ -64,7 +64,7 @@
 	THREE.Cache.enabled = true;
 	var count = 0;
 	var loader = new THREE.FileLoader();
-	var fshader, vshader, fshader2;
+	var fshader, vshader;
 		
 	loader.load('shaders/vertexShader.vert',
 	// onLoad callback
@@ -117,7 +117,7 @@
 		material3 =  new THREE.ShaderMaterial({
 			uniforms: uniforms,
 			fragmentShader: fshader2,
-	                vertexShader: vshader,
+	                vertexShader: vshader2,
 			precision: "mediump"});
 
 		mesh3 = new THREE.Mesh(geometry3, material3);
@@ -125,13 +125,17 @@
 		scene.add(mesh3);
 	    }    
 	}
+	
+	var count2 = 0;
+	var loader2 = new THREE.FileLoader();
+	var vshader2, fshader2;
 		
-	/*loader.load('shaders/vertexShader.vert',
+	loader2.load('shaders/vertexShader.vert',
 	// onLoad callback
 	    function (data) {
 		    console.log(data); // output the text to the console
-		    vshader = data;
-		    count += 1;
+		    vshader2 = data;
+		    count2 += 1;
 		    addCoolCube3();
 		},
 	// onProgress callback
@@ -141,14 +145,14 @@
 	// onError callback
 	    function (err) {
 		console.error('An error happened');
-	    });*/
+	    });
 	
-	loader.load('shaders/fragmentShader2.frag',
+	loader2.load('shaders/fragmentShader2.frag',
 	// onLoad callback
 	    function (data) {
 		    console.log(data); // output the text to the console
 		    fshader2 = data;
-		    count += 1;
+		    count2 += 1;
 		    addCoolCube3(); // we will write this method
 		},
 	// onProgress callback
