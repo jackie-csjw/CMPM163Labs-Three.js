@@ -21,13 +21,14 @@
             
             // setup the first cube
             var geometry1 = new THREE.BoxGeometry();
-	    geometry1.translate(-1, 0, 0);
+	    geometry1.translate(-5, 0, 0);
             var material1 = new THREE.MeshPhongMaterial( { color: 0xdddddd, specular: 0x00ff00, shininess: 30 });
             var cube1 = new THREE.Mesh( geometry1, material1 );
             scene.add(cube1);
             
             //setup the second cube
             var geo2 = new THREE.BoxGeometry();
+	    geo2.translate(-3, 0, 0);
             var mat2 = new THREE.MeshLambertMaterial({color: 0x234452});
             var cube2 = new THREE.Mesh(geo2, mat2);
             scene.add(cube2);
