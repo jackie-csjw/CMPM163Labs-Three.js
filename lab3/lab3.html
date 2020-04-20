@@ -43,7 +43,7 @@
 	    function addCoolCube() {
 		if(count == 2) {
 		    geometry1 = new THREE.BoxGeometry(1, 1, 1);
-		material1 =  new THREE.ShaderMaterial({
+		    material1 =  new THREE.ShaderMaterial({
 			fragmentShader: fshader,
 	                vertexShader: vshader,
 			precision: "mediump"});
@@ -66,17 +66,17 @@
 		    console.log(data); // output the text to the console
 		    vshader = data;
 		    count += 1;
-		    var geometry1, material1, mesh1;
-                    addCoolCube(); // we will write this method
+		    addCoolCube(); // we will write this method
 		},
 	    // onProgress callback
 	    function (xhr) {
 		console.log((xhr.loaded/xhr.total * 100)+ '% loaded');
 	    },
-	   // onError callback
+	    // onError callback
 	    function (err) {
 		console.error('An error happened');
 	    });
+
 		
 	    loader.load('shaders/fragmentShader.frag',
 	    // onLoad callback
@@ -94,8 +94,7 @@
 	    function (err) {
 		console.error('An error happened');
 	    });
-
-
+		
 
             function animate()
             {
