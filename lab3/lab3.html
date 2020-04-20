@@ -96,6 +96,7 @@
 		    vshader = data;
 		    count += 1;
 		    addCoolCube(); // we will write this method
+		    addCoolCube3();
 		},
 	// onProgress callback
 	    function (xhr) {
@@ -122,23 +123,6 @@
 	    function (err) {
 		console.error('An error happened');
 	    });
-	
-	loader.load('shaders/vertexShader.vert',
-	// onLoad callback
-	    function (data) {
-		    console.log(data); // output the text to the console
-		    vshader = data;
-		    count += 1;
-		    addCoolCube3(); // we will write this method
-		},
-	// onProgress callback
-	    function (xhr) {
-		console.log((xhr.loaded/xhr.total * 100)+ '% loaded');
-	    },
-	// onError callback
-	    function (err) {
-		console.error('An error happened');
-	    });	
 		
 	loader.load('shaders/fragmentShader2.frag',
 	// onLoad callback
