@@ -21,6 +21,7 @@
             
             // setup the first cube
             var geometry1 = new THREE.BoxGeometry();
+	    geometry1.translate( 0.5, 0.5, 0.5 );
             var material1 = new THREE.MeshPhongMaterial( { color: 0xdddddd, specular: 0x00ff00, shininess: 30 });
             var cube1 = new THREE.Mesh( geometry1, material1 );
             scene.add(cube1);
@@ -39,7 +40,7 @@
             function animate()
             {
                 requestAnimationFrame(animate);
-		//geometry1.position(1, 0, 0);
+		geometry1.position(1, 0, 0);
                 geometry1.rotateX(0.01);
                 geometry1.rotateY(0.01);
 		geo2.rotateX(0.02);
