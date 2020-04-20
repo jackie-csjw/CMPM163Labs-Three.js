@@ -67,15 +67,15 @@
 		if(count == 2) {
 		    let uniforms = {
 			colorB: {type: 'vec3', value: new 
-		THREE.Color(0x63A08B)},
+		THREE.Color(0xCCC394)},
 			colorA: {type: 'vec3', value: new 
-		THREE.Color(0xEA5154)}
+		THREE.Color(0xF5CE92)}
 		     };
 		    geometry3 = new THREE.BoxGeometry(1, 1, 1);
 		material3 =  new THREE.ShaderMaterial({
 			uniforms: uniforms,
-			fragmentShader: fshader,
-	                vertexShader: vshader,
+			fragmentShader: fshader2,
+	                vertexShader: vshader2,
 			precision: "mediump"});
 
 		mesh3 = new THREE.Mesh(geometry3, material3);
