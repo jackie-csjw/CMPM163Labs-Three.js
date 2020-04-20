@@ -66,7 +66,7 @@
 	var loader = new THREE.FileLoader();
 	var fshader, vshader;
 		
-	loader.load('shaders/vertexShader.vert',
+	/*loader.load('shaders/vertexShader.vert',
 	// onLoad callback
 	    function (data) {
 		    console.log(data); // output the text to the console
@@ -81,7 +81,7 @@
 	// onError callback
 	    function (err) {
 		console.error('An error happened');
-	    });
+	    });*/
 	
 	loader.load('shaders/fragmentShader.frag',
 	// onLoad callback
@@ -132,6 +132,7 @@
 		    console.log(data); // output the text to the console
 		    vshader = data;
 		    count += 1;
+		    addCoolCube();
 		    addCoolCube3();
 		},
 	// onProgress callback
