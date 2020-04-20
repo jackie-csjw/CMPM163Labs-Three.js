@@ -28,13 +28,17 @@
             //setup the second cube
             var geo2 = new THREE.BoxGeometry();
             var mat2 = new THREE.MeshPhysicalMaterial( {
-		clearcoat: 1.0,
-		clearcoatRoughness: 0.1,
-		metalness: 0.9,
-		roughness: 0.5,
-		color: 0x0000ff,
-		normalMap: normalMap3,
-		normalScale: new THREE.Vector2( 0.15, 0.15 )
+		color: params.color,
+		metalness: 0,
+		roughness: 0,
+		alphaMap: texture,
+		alphaTest: 0.5,
+		envMap: hdrCubeRenderTarget.texture,
+		envMapIntensity: params.envMapIntensity,
+		depthWrite: false,
+		transparency: params.transparency, // use material.transparency for glass materials
+		opacity: 1,                        // set material.opacity to 1 when material.transparency is non-zero
+		transparent: true
 	    } );
             //var mat2 = new THREE.MeshPhongMaterial
             var cube2 = new THREE.Mesh(geo2, mat2);
