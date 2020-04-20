@@ -64,9 +64,9 @@
 	THREE.Cache.enabled = true;
 	var count = 0;
 	var loader = new THREE.FileLoader();
-	var fshader, vshader;
+	var fshader, vshader, fshader2;
 		
-	/*loader.load('shaders/vertexShader.vert',
+	loader.load('shaders/vertexShader.vert',
 	// onLoad callback
 	    function (data) {
 		    console.log(data); // output the text to the console
@@ -81,7 +81,7 @@
 	// onError callback
 	    function (err) {
 		console.error('An error happened');
-	    });*/
+	    });
 	
 	loader.load('shaders/fragmentShader.frag',
 	// onLoad callback
@@ -132,7 +132,6 @@
 		    console.log(data); // output the text to the console
 		    vshader = data;
 		    count += 1;
-		    addCoolCube();
 		    addCoolCube3();
 		},
 	// onProgress callback
@@ -177,11 +176,11 @@
 		    geometry1.rotateY(0.01);
 		}
 		
-		/*if(geometry3) {
-		    geometry3.translate(0.01, 0, 0.01);
+		if(geometry3) {
+		    //geometry3.translate(0.01, 0, 0.01);
 		    geometry3.rotateX(0.01);
 		    geometry3.rotateY(0.01);
-		}*/
+		}
 
                 renderer.render(scene, camera);
             }
