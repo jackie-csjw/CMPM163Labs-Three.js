@@ -56,33 +56,10 @@
 			precision: "mediump"});
 
 		mesh1 = new THREE.Mesh(geometry1, material1);
-		mesh1.position.x = 2;
+		mesh1.position.x = 1;
 		scene.add(mesh1);
 	    }    
 	}
-	
-	/*var geometry3, material3, mesh3;
-
-	function addCoolCube3() {
-		if(count == 2) {
-		    let uniforms = {
-			colorB: {type: 'vec3', value: new 
-		THREE.Color(0xCCC394)},
-			colorA: {type: 'vec3', value: new 
-		THREE.Color(0xF5CE92)}
-		     };
-		    geometry3 = new THREE.BoxGeometry(1, 1, 1);
-		material3 =  new THREE.ShaderMaterial({
-			uniforms: uniforms,
-			fragmentShader: fshader2,
-	                vertexShader: vshader2,
-			precision: "mediump"});
-
-		mesh3 = new THREE.Mesh(geometry3, material3);
-		mesh3.position.x = 3;
-		scene.add(mesh3);
-	    }    
-	}*/
 		
 	THREE.Cache.enabled = true;
 	var count = 0;
@@ -126,16 +103,34 @@
 		
 		
 		
-	/*THREE.Cache.enabled = true;
-	var count = 0;
-	var loader2 = new THREE.FileLoader();
-	var fshader2, vshader2;
+	var geometry3, material3, mesh3;
+
+	function addCoolCube3() {
+		if(count == 2) {
+		    let uniforms = {
+			colorB: {type: 'vec3', value: new 
+		THREE.Color(0xCCC394)},
+			colorA: {type: 'vec3', value: new 
+		THREE.Color(0xF5CE92)}
+		     };
+		    geometry3 = new THREE.BoxGeometry(1, 1, 1);
+		material3 =  new THREE.ShaderMaterial({
+			uniforms: uniforms,
+			fragmentShader: fshader2,
+	                vertexShader: vshader,
+			precision: "mediump"});
+
+		mesh3 = new THREE.Mesh(geometry3, material3);
+		mesh3.position.x = 3;
+		scene.add(mesh3);
+	    }    
+	}
 		
-	loader2.load('shaders/vertexShader.vert',
+	loader.load('shaders/vertexShader.vert',
 	// onLoad callback
 	    function (data) {
 		    console.log(data); // output the text to the console
-		    vshader2 = data;
+		    vshader = data;
 		    count += 1;
 		    addCoolCube3();
 		},
@@ -148,7 +143,7 @@
 		console.error('An error happened');
 	    });
 	
-	loader2.load('shaders/fragmentShader2.frag',
+	loader.load('shaders/fragmentShader2.frag',
 	// onLoad callback
 	    function (data) {
 		    console.log(data); // output the text to the console
@@ -163,7 +158,7 @@
 	// onError callback
 	    function (err) {
 		console.error('An error happened');
-	    });*/
+	    });
 
 
 
