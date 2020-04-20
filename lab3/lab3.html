@@ -28,17 +28,14 @@
             //setup the second cube
             var geo2 = new THREE.BoxGeometry();
             var mat2 = new THREE.MeshPhysicalMaterial( {
-					map: null,
-					color: 0x0000ff,
-					metalness: 1,
-					roughness: 0,
-					opacity: 0.5,
-					side: THREE.BackSide,
-					transparent: true,
-					envMapIntensity: 5,
-					premultipliedAlpha: true
-					// TODO: Add custom blend mode that modulates background color by this materials color.
-				} );
+		clearcoat: 1.0,
+		clearcoatRoughness: 0.1,
+		metalness: 0.9,
+		roughness: 0.5,
+		color: 0x0000ff,
+		normalMap: normalMap3,
+		normalScale: new THREE.Vector2( 0.15, 0.15 )
+	    } );
             //var mat2 = new THREE.MeshPhongMaterial
             var cube2 = new THREE.Mesh(geo2, mat2);
             scene.add(cube2);
