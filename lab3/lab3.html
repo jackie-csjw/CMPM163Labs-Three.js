@@ -61,7 +61,7 @@
 	    }    
 	}
 	
-	var geometry3, material3, mesh3;
+	/*var geometry3, material3, mesh3;
 
 	function addCoolCube3() {
 		if(count == 2) {
@@ -82,7 +82,7 @@
 		mesh3.position.x = 3;
 		scene.add(mesh3);
 	    }    
-	}
+	}*/
 		
 	THREE.Cache.enabled = true;
 	var count = 0;
@@ -126,7 +126,7 @@
 		
 		
 		
-	THREE.Cache.enabled = true;
+	/*THREE.Cache.enabled = true;
 	var count = 0;
 	var loader2 = new THREE.FileLoader();
 	var fshader2, vshader2;
@@ -163,7 +163,7 @@
 	// onError callback
 	    function (err) {
 		console.error('An error happened');
-	    });
+	    });*/
 
 
 
@@ -181,11 +181,11 @@
 		    geometry1.rotateY(0.01);
 		}
 		
-		if(geometry3) {
+		/*if(geometry3) {
 		    geometry3.translate(0.01, 0, 0.01);
 		    geometry3.rotateX(0.01);
 		    geometry3.rotateY(0.01);
-		}
+		}*/
 
                 renderer.render(scene, camera);
             }
