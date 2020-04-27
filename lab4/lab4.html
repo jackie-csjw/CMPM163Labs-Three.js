@@ -47,6 +47,7 @@
                 light.position.set(10, 10, 10);
                 scene.add(light);
             
+            //add shader texture cube
                 var geometry1, material1, mesh1;
 
                 function addTextureShaderCube()
@@ -64,7 +65,7 @@
                                                                vertexShader: vshader, precision: "mediump"});
 
                         mesh1 = new THREE.Mesh(geometry1, material1);
-                        mesh1.position.x = 2;
+                        mesh1.position.y = -2;
                         scene.add(mesh1);
                     }
                 }
