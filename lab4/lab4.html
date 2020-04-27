@@ -27,11 +27,20 @@
                 var cube = new THREE.Mesh(geometry, material);
                 scene.add(cube);
                 
-            //add second cube
+            //add the second cube
                 var material = new THREE.MeshPhongMaterial( { map: texture } );
                 var cube2 = new THREE.Mesh(geometry, material);
                 scene.add(cube2);
                 cube2.position.x -= 2;
+            
+            //add the third cube
+                var geo2 = new.THREE.BoxGeometry();
+                var texture2 = THREE.ImageUtils.loadTexture("173b.JPG");
+                var normMap2 = THREE.ImageUtils.loadTexture("173_norm.JPG");
+                var mat2 = new THREE.MeshPhongMaterial( { map: texture2, normalMap: normMap2 } );
+                var cube3 = new.THREE.Mesh(geo2, mat2);
+                scene.add(cube3);
+                cube3.position.x += 2;
 
             //add the light
                 var light = new THREE.PointLight(0xffffff, 1, 1000);
