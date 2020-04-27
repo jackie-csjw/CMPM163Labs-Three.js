@@ -9,9 +9,7 @@ Answers:
    b.) y = (height of texture) - v * (height of texture)
    
    c.) x = 0.375 * 8 = 3
-   
        y = 8 - (0.25 * 8) = 6
-       
        (3, 6), which is a white grid.
        
 
