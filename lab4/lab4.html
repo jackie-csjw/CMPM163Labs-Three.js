@@ -12,12 +12,12 @@
         <script src="../three.js-master/build/three.js"></script>
         <script>
             // setup the scene
-              var scene = new THREE.Scene();
-              var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
-              var renderer = new THREE.WebGLRenderer();
-              renderer.setSize(window.innerWidth, window.innerHeight);
-              document.body.appendChild(renderer.domElement);
-              camera.position.z = 5;
+                var scene = new THREE.Scene();
+                var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+                var renderer = new THREE.WebGLRenderer();
+                renderer.setSize(window.innerWidth, window.innerHeight);
+                document.body.appendChild(renderer.domElement);
+                camera.position.z = 5;
             
             // setup the cube
                 var geometry = new THREE.BoxGeometry();
@@ -25,6 +25,10 @@
                 var material = new THREE.MeshPhongMaterial( { map: texture } );
                 var cube = new THREE.Mesh(geometry, material);
                 scene.add(cube);
+                
+                var cube2 = new THREE.Mesh(geometry, material);
+                scene.add(cube2);
+                cube2.position.x -= 2;
 
             // add the light
                 var light = new THREE.PointLight(0xffffff, 1, 1000);
@@ -32,6 +36,17 @@
                 scene.add(light);
 
             function animate() {
+                var delta = -1;
+                
+                if(light.position.x < -20.0)
+                {
+                    delta = 1;
+                }
+                else if(light.position.x > 20.0)
+                {
+                    delta = -1;
+                }
+                light.position.x += delta;
                 requestAnimationFrame(animate);
                 renderer.render(scene, camera);
             }
