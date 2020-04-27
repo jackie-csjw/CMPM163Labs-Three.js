@@ -5,10 +5,10 @@
 
 Answers:
 24 a.) x = u * (width of texture)
-   b.) y = v * (height of texture)
+   b.) y = (height of texture) - v * (height of texture)
    c.) x = 0.375 * 8 = 3
-       y = 0.25 * 8 = 2
-       (3, 2), which is a white grid.
+       y = 8 - (0.25 * 8) = 6
+       (3, 6), which is a white grid.
 
 video link: https://drive.google.com/file/d/1KMBJpjPNrFZP9a-H9bvyScomGrOxq47O/view?usp=sharing
 
