@@ -21,12 +21,14 @@
             
             //setup the cube
                 var geometry = new THREE.BoxGeometry();
-                var texture = THREE.ImageUtils.loadTexture("170.jpg");
-                var material = new THREE.MeshPhongMaterial( { map: texture } );
+                var texture = THREE.ImageUtils.loadTexture("170.JPG");
+                var normMap = THREE.ImageUtils.loadTexture("170_norm.JPG");
+                var material = new THREE.MeshPhongMaterial( { map: texture, normalMap: normMap } );
                 var cube = new THREE.Mesh(geometry, material);
                 scene.add(cube);
                 
             //add second cube
+                var material = new THREE.MeshPhongMaterial( { map: texture } );
                 var cube2 = new THREE.Mesh(geometry, material);
                 scene.add(cube2);
                 cube2.position.x -= 2;
