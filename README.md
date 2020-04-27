@@ -1,4 +1,17 @@
 # CMPM163Labs
+
+
+-------------------------------------
+-lab3
+
+video link: https://drive.google.com/file/d/1KMBJpjPNrFZP9a-H9bvyScomGrOxq47O/view?usp=sharing
+
+1. I made the first cube by creating a cube and adding phong material (green) on it
+2. It's similar to the first one, but instead of using phong material, I used lambert material (blue).
+3. I first created a vertx shader and a fragment shader file for coloring. then, made variables and
+   loader code. Lastly, created the function to build the cube and add animation.
+4. The process is similar to (3), but the colors are changed.
+
 -------------------------------------
 -lab2
 
