@@ -34,7 +34,7 @@
                 cube2.position.x -= 2;
             
             //add the third cube
-                var geo2 = new.THREE.BoxGeometry();
+                var geo2 = new THREE.BoxGeometry();
                 var texture2 = THREE.ImageUtils.loadTexture("173b.JPG");
                 var normMap2 = THREE.ImageUtils.loadTexture("173_norm.JPG");
                 var mat2 = new THREE.MeshPhongMaterial( { map: texture2, normalMap: normMap2 } );
@@ -50,9 +50,8 @@
             
             var delta = -0.5;
             
-            function animate() {
-                
-                
+            function animate()
+            {
                 if(light.position.x < -30.0)
                 {
                     delta = 0.5;
@@ -62,6 +61,7 @@
                     delta = -0.5;
                 }
                 light.position.x += delta;
+                
                 requestAnimationFrame(animate);
                 renderer.render(scene, camera);
             }
