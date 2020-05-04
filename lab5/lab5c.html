@@ -102,7 +102,7 @@
             }
             
             var sp = new THREE.TextureLoader().load('rain.png');
-            const mat = new THREE.PointsMaterial( { size: 3.3, sizeAttenuation: true, map: sp, 
+            const mat = new THREE.PointsMaterial( { size: 11.3, sizeAttenuation: true, map: sp, 
                                                       alphaTest: 0.5, transparent: true } );
             mesh = new THREE.Points(geo,mat);
             mesh.position.z = -4;
