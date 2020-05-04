@@ -1,5 +1,13 @@
 # CMPM163Labs
 
+-lab5
+
+a.) video link: https://drive.google.com/open?id=1T-nAFOFCe2oApHi9cXM11thiliPizI3G
+b.) video link: https://drive.google.com/open?id=1iWmPXbM32jE_ijNjCislKdPg0W4amIWP
+c.) video link: https://drive.google.com/open?id=1mtVjJbnUz8QSFJRKRBhVM86FYKX5jXjb
+
+I made my custom scene by combining the techinque we learned from part a and part b. I first used the part a technique,
+replace the texture with a cloud picture. And add the particle with rain drop texture, and changed the velocity downwards.
 -------------------------------------
 -lab4
 
