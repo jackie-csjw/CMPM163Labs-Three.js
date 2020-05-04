@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Lab 5a: Choose Your Own Particle Adventure</title>
+        <title>Lab 5c: singing in the rain</title>
         <style>
             body { margin: 0; }
             canvas { display: block; }
@@ -18,6 +18,12 @@
             renderer.setSize(window.innerWidth, window.innerHeight);
             document.body.appendChild(renderer.domElement);
             camera.position.z = 60;
+            
+            ambient = new THREE.AmbientLight(0x555555);
+            scene.add(ambient);
+            directionalLight = new THREE.DirectionalLight(0xffeedd);
+            directionalLight.position.set(0,0,1);
+            scene.add(directionalLight);
             
             var vertices = [];
 
