@@ -19,12 +19,6 @@
             document.body.appendChild(renderer.domElement);
             camera.position.z = 60;
             
-            ambient = new THREE.AmbientLight(0x555555);
-            scene.add(ambient);
-            directionalLight = new THREE.DirectionalLight(0xffeedd);
-            directionalLight.position.set(0,0,1);
-            scene.add(directionalLight);
-            
             var vertices = [];
 
             for ( var i = 0; i < 1000; i ++ )
@@ -107,7 +101,9 @@
                 geo.vertices.push(particle.position)
             }
             
-            const mat = new THREE.PointsMaterial({color:0x3c5b74,size: 0.5});
+            var sp = new THREE.TextureLoader().load('rain.png');
+            const mat = new THREE.PointsMaterial( { size: 3.3, sizeAttenuation: true, map: sp, 
+                                                      alphaTest: 0.5, transparent: true } );
             mesh = new THREE.Points(geo,mat);
             mesh.position.z = -4;
             scene.add(mesh);
