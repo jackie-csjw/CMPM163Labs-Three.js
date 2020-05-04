@@ -87,7 +87,7 @@
             
             particles = []
             const geo = new THREE.Geometry()
-            for(let i=0; i<1000; i++)
+            for(let i=0; i<100000; i++)
             {
                 const particle = {
                     position: new THREE.Vector3(
@@ -107,7 +107,7 @@
                 geo.vertices.push(particle.position)
             }
             
-            const mat = new THREE.PointsMaterial({color:0xffffff,size: 0.5});
+            const mat = new THREE.PointsMaterial({color:0x3c5b74,size: 0.5});
             mesh = new THREE.Points(geo,mat);
             mesh.position.z = -4;
             scene.add(mesh);
