@@ -25,6 +25,11 @@
             var mat2 = new THREE.MeshPhongMaterial( { color: 0xdddddd, specular: 0x00ff00, shininess: 30 });
             var cube2 = new THREE.Mesh( geo2, mat2 );
             scene.add(cube2);
+		
+            // add the light
+	    var light = new THREE.PointLight(0xffffff, 1, 1000);
+	    light.position.set(10, 10, 10);
+	    scene.add(light);
             
             particles = []
             const geo = new THREE.Geometry()
