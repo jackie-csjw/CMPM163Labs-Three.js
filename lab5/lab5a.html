@@ -32,8 +32,9 @@
             var geometry = new THREE.BufferGeometry();
             geometry.setAttribute( 'position', new THREE.Float32BufferAttribute(vertices, 3));
             
-            var material = new THREE.PointsMaterial( { color: 0xef983e } );
-            
+            var sprite = new THREE.TextureLoader().load('disc.png');
+            var material = new THREE.PointsMaterial( { map: sprite, alphaTest: 0.5, transparent: true } );
+
             var points = new THREE.Points(geometry, material);
             scene.add(points);
 
