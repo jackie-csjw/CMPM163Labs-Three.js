@@ -56,7 +56,7 @@
 
             // how many times to repeat in each direction; the default is (1,1),
             //   which is probably why your example wasn't working
-            texture.repeat.set( 4, 4 ); 
+            texture2.repeat.set( 4, 4 ); 
 
             material2 = new THREE.MeshLambertMaterial({ map : texture2 });
             plane2 = new THREE.Mesh(new THREE.PlaneGeometry(400, 3500), material2);
