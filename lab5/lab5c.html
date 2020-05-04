@@ -19,6 +19,13 @@
             document.body.appendChild(renderer.domElement);
             camera.position.z = 60;
             
+            // setup the first cube
+            var geo2 = new THREE.BoxGeometry();
+	        geo2.translate(-5, 0, 0);
+            var mat2 = new THREE.MeshPhongMaterial( { color: 0xdddddd, specular: 0x00ff00, shininess: 30 });
+            var cube2 = new THREE.Mesh( geo2, mat2 );
+            scene.add(cube2);
+            
             particles = []
             const geo = new THREE.Geometry()
             for(let i=0; i<1000; i++)
@@ -48,6 +55,7 @@
 
             function animate() 
             {
+                geo2.rotateZ(0.02);
                 particles.forEach(p => {
                 p.velocity.add(p.acceleration);
                 p.position.add(p.velocity);
