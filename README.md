@@ -1,7 +1,7 @@
 # CMPM163Labs
 
 -lab6
-1. ![](image/lab6/screenshot.png)
+1. ![](lab6/screenshot.png)
 
 2. https://www.shadertoy.com/view/wdfBDl
 
