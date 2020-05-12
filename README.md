@@ -1,5 +1,12 @@
 # CMPM163Labs
 
+-lab6
+1. ![](image/lab6/screenshot.png)
+
+2. https://www.shadertoy.com/view/wdfBDl
+
+3. https://www.shadertoy.com/view/3slcWr
+-------------------------------------
 -lab5
 
 a.) video link: https://drive.google.com/open?id=1T-nAFOFCe2oApHi9cXM11thiliPizI3G
