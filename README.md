@@ -1,8 +1,7 @@
 # CMPM163Labs
 
 -lab7
-A. ![](image/lab7/1.png)
-   ![](image/lab7/2.png)
+A. ![](image/lab7/1.png)  ![](image/lab7/2.png)
 
 2. https://drive.google.com/file/d/1ZaRTYNyMSxbOeZs79oI3t4XJ1JFV3jk5/view?usp=sharing
 
