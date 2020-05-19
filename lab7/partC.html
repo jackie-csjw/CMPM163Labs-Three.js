@@ -66,10 +66,20 @@
             plane.rotation.x = -Math.PI / 2;
             scene.add(plane);
             
-            const mat = new THREE.MeshPhongMaterial({color:0xb7c06f, Shininess:71, side:THREE.DoubleSide})
+            var uniforms2 = 
+            {
+                texture2: { type: "t", value:THREE.ImageUtils.loadTexture("ocean.jpg")},
+                //heightMap1: { type: "t",value:THREE.ImageUtils.loadTexture("mountain1.jpg")}
+            };
+            
+            var material2 = new THREE.ShaderMaterial({ uniforms: uniforms2, 
+                                                      vertexShader: document.getElementById('vertexShader').textContent, 
+                                                      fragmentShader: document.getElementById('fragmentShader').textContent});
+            
+            const mat = new THREE.MeshPhongMaterial({color:0x3d677b, Shininess:100, side:THREE.DoubleSide})
             var p = new THREE.PlaneGeometry(20, 20, 100, 100);
             var plane2 = new THREE.Mesh(p, mat);
-            plane2.position.z = -20;
+            plane2.position.z = -10;
             plane2.rotation.x = -1.2;
             scene.add(plane2);
             
