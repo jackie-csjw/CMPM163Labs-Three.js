@@ -47,6 +47,9 @@
                     float amp = 0.1;
                     float angle = (time + position.x)*freq;
                     transformed.z += sin(angle)*amp;
+                    objectNormal = normalize(vec3(-amp * freq * cos(angle),0.0,1.0));
+                    vNormal = normalMatrix * objectNormal;
+
                 `
                 shader.vertexShader = shader.vertexShader.replace(token,customTransform)
                 matShader = shader
