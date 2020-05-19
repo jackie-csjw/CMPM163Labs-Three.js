@@ -41,7 +41,7 @@
             renderer.setSize(window.innerWidth, window.innerHeight);
             document.body.appendChild(renderer.domElement);
             camera.position.y = 5;
-            camera.position.z = 0;
+            camera.position.z = 2;
             camera.rotation.x = -.5;
 
             const light = new THREE.DirectionalLight(0xffffff, 1.0);
@@ -67,7 +67,7 @@
             scene.add(plane);
 
             var plane3 = new THREE.Mesh(new THREE.PlaneGeometry(10, 10, 200, 200), material);
-            plane3.position.z = -17.5;
+            plane3.position.z = -16.8;
             plane3.position.y = -1;
             plane3.position.x = 0;
             plane3.rotation.x = -Math.PI / 2;
