@@ -25,6 +25,13 @@
             const light2 = new THREE.PointLight(0xffffff, 1.0);
             light2.position.set(0,5,-25);
             scene.add(light2);
+            
+            const mat = new THREE.MeshPhongMaterial({color:0xb7c06f, Shininess:71, side:THREE.DoubleSide})
+            var p = new THREE.PlaneGeometry(20, 20, 100, 100);
+            var plane = new THREE.Mesh(p, mat);
+            plane.position.z = -20;
+            plane.rotation.x = -1.2;
+            scene.add(plane);
 
             function animate(time)
             {
