@@ -77,10 +77,12 @@
                                                       fragmentShader: document.getElementById('fragmentShader').textContent});
             
             const mat = new THREE.MeshPhongMaterial({color:0x3d677b, Shininess:100, side:THREE.DoubleSide})
-            var p = new THREE.PlaneGeometry(10, 10, 100, 100);
+            var p = new THREE.PlaneGeometry(10, 10, 200, 200);
             var plane2 = new THREE.Mesh(p, mat);
-            plane2.position.z = -18;
-            plane2.rotation.x = -1.2;
+            plane2.position.z = -10;
+            plane2.position.y = -1;
+            plane2.position.x = 0;
+            plane2.rotation.x = -Math.PI / 2;
             scene.add(plane2);
             
             var matShader;
