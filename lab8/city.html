@@ -43,12 +43,12 @@
                   scene.add(plane2);
             
                   var plane3 = new THREE.Mesh(p, mat2);
-                  var planeCenter2 = new THREE.Vector3(0,-parseInt(planeSize/4),-planeSize/2);
+                  var planeCenter3 = new THREE.Vector3(0,-parseInt(planeSize/4),-planeSize/2);
                   //plane2.position.x = 10;
-                  plane2.position.z = 10;
-                  plane2.position.y = planeCenter2.y;
-                  plane2.rotation.x = Math.PI/2;
-                  scene.add(plane2);
+                  plane3.position.z = 10;
+                  plane3.position.y = planeCenter3.y;
+                  plane3.rotation.x = Math.PI/2;
+                  scene.add(plane3);
 
             // add the lights all around the city
                   for(var a = 270; a < 270 * 2; a+=100)
