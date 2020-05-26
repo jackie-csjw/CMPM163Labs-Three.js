@@ -182,16 +182,16 @@
             
             var plane4 = new THREE.Mesh(new THREE.PlaneGeometry(planeSize, planeSize, 100, 100), material);
             plane4.position.z = planeCenter2.z;
-            plane4.position.y = planeCenter3.y;
+            plane4.position.y = (planeCenter3.y) - 3;
             plane4.position.x = -10;
             plane4.rotation.x = -Math.PI / 2;
             scene.add(plane4);
 
             var plane5 = new THREE.Mesh(new THREE.PlaneGeometry(planeSize, planeSize, 100, 100), material);
             plane5.position.z = -5;
-            plane5.position.y = planeCenter3.y;
+            plane5.position.y = (planeCenter3.y) - 3;
             plane5.rotation.x = -Math.PI / 2;
-            scene.add(plane5);
+            //scene.add(plane5);
 
                   function animate()
                   {
