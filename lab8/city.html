@@ -19,7 +19,7 @@
              {
                 vUv = uv;
                 vec4 heightColor = texture2D(heightMap1, uv);
-                vec3 newPosition = position + normal * 5.0 * heightColor.r;
+                vec3 newPosition = position + normal * 10.0 * heightColor.r;
                 vec4 modelViewPosition = modelViewMatrix * vec4(newPosition, 1.0);
                 gl_Position = projectionMatrix * modelViewPosition;
              }
@@ -182,7 +182,7 @@
             
             var plane4 = new THREE.Mesh(new THREE.PlaneGeometry(planeSize, planeSize, 100, 100), material);
             plane4.position.z = planeCenter2.z;
-            plane4.position.y = (planeCenter3.y) - 3;
+            plane4.position.y = (planeCenter3.y) - 2;
             plane4.position.x = -10;
             plane4.rotation.x = -Math.PI / 2;
             scene.add(plane4);
