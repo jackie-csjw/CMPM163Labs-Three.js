@@ -180,19 +180,18 @@
                                                       vertexShader: document.getElementById('vertexShader').textContent, 
                                                       fragmentShader: document.getElementById('fragmentShader').textContent});
             
-            var plane4 = new THREE.Mesh(new THREE.PlaneGeometry(10, 10, 200, 200), material);
+            var plane4 = new THREE.Mesh(new THREE.PlaneGeometry(planeSize, planeSize, 100, 100), material);
             plane4.position.z = planeCenter2.z;
             plane4.position.y = planeCenter3.y;
             plane4.position.x = -10;
             plane4.rotation.x = -Math.PI / 2;
             scene.add(plane4);
 
-            var plane5 = new THREE.Mesh(new THREE.PlaneGeometry(10, 10, 200, 200), material);
+            var plane5 = new THREE.Mesh(new THREE.PlaneGeometry(planeSize, planeSize, 100, 100), material);
             plane5.position.z = -5;
             plane5.position.y = planeCenter3.y;
             plane5.rotation.x = -Math.PI / 2;
             scene.add(plane5);
-
 
                   function animate()
                   {
