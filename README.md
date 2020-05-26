@@ -1,5 +1,27 @@
 # CMPM163Labs
 
+-lab8
+
+i. ![](lab8/hong_kong.jpg)
+
+2. ![](lab8/ScreenShot.png)
+
+3. Based on the picture, I added the mountain behind the city and ocean besides the city.
+   I also added a boat to reminiscent the city signature junk boat(couldn't find free model of junk boat, hehe).
+
+
+-Which part did my partner do?
+
+    I did part 1.
+-Which part of a tutorial did your partner find most challenging?
+
+    Step 6 where you need to import more models&materials. As it is not clear in the handout that using the universal rendering
+    pipeline would cause problems with custom shaders, it was really hard for me to import one into the scene.
+-Which part of a tutorial did your partner find most interesting?
+
+    Step 4 where you get to make a wave with only the shader. It was epic.
+    
+-------------------------------------
 -lab7
 A. ![](image/lab7/1.png)  
       ![](image/lab7/2.png)
