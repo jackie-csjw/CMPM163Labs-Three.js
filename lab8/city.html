@@ -156,7 +156,7 @@
                                     var geometry = new THREE.BoxGeometry();
                                     var material = new THREE.MeshPhongMaterial({color: 0x86858d});
                                     var cube = new THREE.Mesh(geometry, material);
-                                    cube.scale.y = Math.random() * 8;
+                                    cube.scale.y = Math.random() * 7;
                                     cube.scale.x = .65;
                                     cube.scale.z = .4;
                                     cube.position.z = planeCenter.z + c + cube.scale.z/2;
@@ -182,7 +182,7 @@
             
             var plane4 = new THREE.Mesh(new THREE.PlaneGeometry(planeSize, planeSize, 100, 100), material);
             plane4.position.z = planeCenter2.z;
-            plane4.position.y = (planeCenter3.y) - 2;
+            plane4.position.y = (planeCenter3.y) - 3;
             plane4.position.x = -10;
             plane4.rotation.x = -Math.PI / 2;
             scene.add(plane4);
