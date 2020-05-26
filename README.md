@@ -2,9 +2,9 @@
 
 -lab8
 
-i. ![](image/lab8/hong kong.png)
+i. ![](lab8/hong_kong.jpg)
 
-2. ![](image/lab8/ScreenShot.png)
+2. ![](lab8/ScreenShot.png)
 
 3. Based on the picture, I added the mountain behind the city and ocean besides the city.
    I also added a boat to reminiscent the city signature junk boat(couldn't find free model of junk boat, hehe).
