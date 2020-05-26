@@ -22,7 +22,9 @@
                   camera.lookAt(0,0,0);
 
             // PlaneGeometry
-                  const mat = new THREE.MeshPhongMaterial({color:0x4f4f4f, Shininess:100, side:THREE.DoubleSide});
+                  var buildingTexture = THREE.ImageUtils.loadTexture("building.jpg");
+                  const mat = new THREE.MeshPhongMaterial({map: buildingTexture, Shininess:100, side:THREE.DoubleSide});
+                  //const mat = new THREE.MeshPhongMaterial({color:0x4f4f4f, Shininess:100, side:THREE.DoubleSide});
                   var planeSize = 30;
                   var p = new THREE.PlaneGeometry(planeSize, planeSize, 100, 100);
                   var plane = new THREE.Mesh(p, mat);
