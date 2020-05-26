@@ -46,7 +46,7 @@
             //based on the a,d keys
                   var angle = THREE.MathUtils.degToRad(270);
                   camera.position.x = planeSize * 1.2 * Math.cos(angle);
-                  camera.position.z = planeCenter.z + planeSize * 2.2 * Math.sin(angle);
+                  camera.position.z = planeCenter.z + planeSize * 0.7 * Math.sin(angle);
                   camera.position.y = 4;
                   camera.lookAt(0,0,planeCenter.z);
                   document.onkeypress =  function(event)
