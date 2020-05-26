@@ -8,6 +8,8 @@ i. ![](lab8/hongkong.jpg)
 
 3. Based on the picture, I added the mountain behind the city and ocean besides the city.
    I also added a boat to reminiscent the city signature junk boat(couldn't find free model of junk boat, hehe).
+   
+I tried to contact my partner, but haven't received replies.
     
 -------------------------------------
 -lab7
