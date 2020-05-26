@@ -204,12 +204,12 @@
             loader.load('junkboat.glb', function (gltf){
             gltf.scene.position.x = 8;
             //gltf.scene.position.z = planeCenter2.z;
-            //gltf.scene.position.y = planeCenter2.y;
+            gltf.scene.position.y = planeCenter2.y;
             //gltf.scene.rotation.x = Math.PI/2;
             //gltf.scene.rotation.y = -5;
-            gltf.scene.scale.x = 1;
-            gltf.scene.scale.y = 1;
-            gltf.scene.scale.z = 1;
+            gltf.scene.scale.x = 0.5;
+            gltf.scene.scale.y = 0.5;
+            gltf.scene.scale.z = 0.5;
             scene.add(gltf.scene);
             }, function (xhr) {
             console.log((xhr.loaded / xhr.total * 100) + '% loaded' );
