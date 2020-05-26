@@ -46,7 +46,7 @@
             //based on the a,d keys
                   var angle = THREE.MathUtils.degToRad(270);
                   camera.position.x = planeSize * 1.2 * Math.cos(angle);
-                  camera.position.z = planeCenter.z + planeSize * 0.7 * Math.sin(angle);
+                  camera.position.z = planeCenter.z + planeSize * 0.9 * Math.sin(angle);
                   camera.position.y = 4;
                   camera.lookAt(0,0,planeCenter.z);
                   document.onkeypress =  function(event)
@@ -61,7 +61,7 @@
                             angle -= 0.1;
                         }
                         camera.position.x = planeSize * 1.2 * Math.cos(angle);
-                        camera.position.z = planeCenter.z + planeSize * 0.7 * Math.sin(angle);
+                        camera.position.z = planeCenter.z + planeSize * 0.9 * Math.sin(angle);
                         camera.lookAt(0,0,planeCenter.z);
                   };
                   
@@ -98,7 +98,7 @@
                        // and since our noise is greyscale (rgb are all the same number)
                        // we only need every fourth number to collect all the red values
                        var noiseData = [];
-                       for(var i = 0; i < imageData.data.length; i+=4)
+                       for(var i = 0; i < imageData.data.length; i+=3)
                        {
                            noiseData.push(imageData.data[i]); // just saving red component
                        }
@@ -112,7 +112,7 @@
                                     var geometry = new THREE.BoxGeometry();
                                     var material = new THREE.MeshPhongMaterial({color:0x00ff00});
                                     var cube = new THREE.Mesh(geometry, material);
-                                    cube.scale.y = Math.random() * 15;
+                                    cube.scale.y = Math.random() * 9;
                                     cube.scale.x = .65;
                                     cube.scale.z = .4;
                                     cube.position.z = planeCenter.z + c + cube.scale.z/2;
