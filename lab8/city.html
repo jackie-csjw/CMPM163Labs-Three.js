@@ -19,7 +19,7 @@
              {
                 vUv = uv;
                 vec4 heightColor = texture2D(heightMap1, uv);
-                vec3 newPosition = position + normal * 10.0 * heightColor.r;
+                vec3 newPosition = position + normal * 5.0 * heightColor.r;
                 vec4 modelViewPosition = modelViewMatrix * vec4(newPosition, 1.0);
                 gl_Position = projectionMatrix * modelViewPosition;
              }
@@ -78,7 +78,7 @@
             // add the lights all around the city
                   for(var a = 270; a < 270 * 2; a+=100)
                   {
-                      var light = new THREE.PointLight(0xfcf3b5, 1, planeSize * 1.5);
+                      var light = new THREE.PointLight(0xf4ebd0, 1, planeSize * 1.5);
                       light.position.set(planeSize * Math.cos(THREE.MathUtils.degToRad(a)),
                                          planeCenter.y + planeSize/2,
                                          planeCenter.z + planeSize * Math.sin(THREE.MathUtils.degToRad(a)));
