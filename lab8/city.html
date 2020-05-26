@@ -64,6 +64,20 @@
                         camera.position.z = planeCenter.z + planeSize * 1.2 * Math.sin(angle);
                         camera.lookAt(0,0,planeCenter.z);
                   };
+                  
+                  for(var r = -planeSize/2; r < planeSize/2; r++)
+                  {
+                      for(var c = -planeSize/2; c < planeSize/2; c++)
+                      {
+                            var geometry = new THREE.BoxGeometry();
+                            var material = new THREE.MeshPhongMaterial({color:0x00ff00});
+                            var cube = new THREE.Mesh(geometry, material);
+                            cube.position.z = planeCenter.z + c + cube.scale.z/2;
+                            cube.position.x = r + cube.scale.x / 2;
+                            cube.position.y = planeCenter.y + cube.scale.y / 2;
+                            scene.add(cube);
+                      }
+                  }
 
                   function animate()
                   {
