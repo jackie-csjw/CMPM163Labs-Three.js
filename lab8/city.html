@@ -17,9 +17,9 @@
                   var renderer = new THREE.WebGLRenderer();
                   renderer.setSize(window.innerWidth, window.innerHeight);
                   document.body.appendChild(renderer.domElement);
-                  camera.position.z = 10;
+                  camera.position.z = 20;
                   camera.position.y = 3;
-                  camera.lookAt(12,40,0);
+                  camera.lookAt(0,0,0);
 
             // PlaneGeometry
                   const mat = new THREE.MeshPhongMaterial({color:0x4f4f4f, Shininess:100, side:THREE.DoubleSide});
