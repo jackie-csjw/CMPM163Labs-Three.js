@@ -2,7 +2,7 @@
 
 -lab8
 
-i. ![](lab8/hong_kong.jpg)
+i. ![](lab8/hongkong.jpg)
 
 2. ![](lab8/ScreenShot.png)
 
