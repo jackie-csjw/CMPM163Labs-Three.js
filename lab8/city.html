@@ -202,12 +202,6 @@
             
             var loader = new THREE.GLTFLoader();
             loader.load('junkboat.glb', function (gltf){
-            scene.add(gltf.scene);
-            }, function (xhr) {
-            console.log((xhr.loaded / xhr.total * 100) + '% loaded' );
-            }, function (error) {
-            console.error(error);
-            });
             gltf.scene.position.x = 10;
             gltf.scene.position.z = planeCenter2.z;
             gltf.scene.position.y = planeCenter2.y;
@@ -216,6 +210,13 @@
             gltf.scene.scale.x = 1.3;
             gltf.scene.scale.y = 1.3;
             gltf.scene.scale.z = 1.3;
+            scene.add(gltf.scene);
+            }, function (xhr) {
+            console.log((xhr.loaded / xhr.total * 100) + '% loaded' );
+            }, function (error) {
+            console.error(error);
+            });
+            
 
                   function animate()
                   {
