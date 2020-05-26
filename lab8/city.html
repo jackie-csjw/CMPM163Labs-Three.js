@@ -24,7 +24,7 @@
             // PlaneGeometry
                   
                   const mat = new THREE.MeshPhongMaterial({color:0x4f4f4f, Shininess:100, side:THREE.DoubleSide});
-                  var planeSize = 30;
+                  var planeSize = 18;
                   var p = new THREE.PlaneGeometry(planeSize, planeSize, 100, 100);
                   var plane = new THREE.Mesh(p, mat);
                   var planeCenter = new THREE.Vector3(0,-parseInt(planeSize/4),-planeSize/2);
@@ -110,7 +110,7 @@
                            {
                               for(var c = -planeSize/2; c < planeSize/2; c++)
                               {
-                                    var buildingTexture = THREE.ImageUtils.loadTexture("building.jpg");
+                                    var buildingTexture = THREE.ImageUtils.loadTexture("building2.jpg");
                                     var geometry = new THREE.BoxGeometry();
                                     var material = new THREE.MeshPhongMaterial({map: buildingTexture});
                                     var cube = new THREE.Mesh(geometry, material);
