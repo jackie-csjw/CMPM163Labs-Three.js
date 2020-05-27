@@ -9,6 +9,9 @@ i. ![](lab8/hongkong.jpg)
 3. Based on the picture, I added the mountain behind the city and ocean besides the city.
    I also added a boat to reminiscent the city signature junk boat(couldn't find free model of junk boat, hehe).
 
+![](lab8/Corescant.png)
+![](lab8/lab8d.png)
+
 My Partner Repsonse:
 "The way I did it was that instead of arranging the buildings in a grid using x and y, I arranged them in circles with r (radius) and d (degrees)
 d increments by 5-10 degrees per building, and then rotates them by that amount so that they're facing the center"
