@@ -83,13 +83,13 @@
                     }else if(current == "B")
                     {
                         currentAngle += deltaAngle;
-                    }*/else if(current == "B")
+                    }*/else if(current == "AB")
                     {
                         currentAngle += deltaAngle;
                         var pointToSave = points[points.length - 1];
                         var angleToSave = currentAngle;
                         savedTransformations.push({point: pointToSave, angle: angleToSave});
-                    }else if(current == "AB")
+                    }else if(current == "B")
                     {
                         var popped = savedTransformations.pop();
                         currentAngle = popped.angle;
@@ -101,7 +101,7 @@
             
             function generateSequence()
             {
-                lineLength *= 1.5;
+                lineLength *= 1.1;
                 var nextSequence = "";
                 
                 for(var i=0; i<sequence.length; i++)
