@@ -39,7 +39,7 @@
             // the rule from the tutorial
             rules[0] = {
                             a:"A",
-                            b:"BA"
+                            b:"AB"
                        };
             rules[1] = {
                             a:"B",
@@ -79,20 +79,20 @@
                     }else if(current == "AB")
                     {
                         currentAngle -= deltaAngle;
-                    }else if(current == "BA")
+                    }else if(current == "B")
                     {
                         currentAngle += deltaAngle;
-                    }else if(current == "B")
+                    }else if(current == "ABA")
                     {
                         var pointToSave = points[points.length - 1];
                         var angleToSave = currentAngle;
                         savedTransformations.push({point: pointToSave, angle: angleToSave});
-                    }else if(current == "A")
+                    }/*else if(current == "A")
                     {
                         var popped = savedTransformations.pop();
                         currentAngle = popped.angle;
                         points.push(popped.point);
-                    }
+                    }*/
                  }
 
             }
