@@ -120,6 +120,10 @@
                 sequence = nextSequence;
                 drawSequence(sequence);
             }
+            
+            drawSequence(sequence); // call draw sequence of ‘F’
+            // whenever you click, generate another sequence
+            document.addEventListener("click", generateSequence);
 
             function animate(time)
             {
