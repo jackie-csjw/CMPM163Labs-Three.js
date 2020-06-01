@@ -77,19 +77,19 @@
                         // the current position is the last one on the points list
                         drawSegment(points[points.length - 1]);
                         currentAngle -= deltaAngle;
-                    }/*else if(current == "AB")
+                    }else if(current == "AB")
                     {
                         currentAngle -= deltaAngle;
                     }else if(current == "B")
                     {
                         currentAngle += deltaAngle;
-                    }*/else if(current == "AB")
+                    }else if(current == "BA")
                     {
                         currentAngle += deltaAngle;
                         var pointToSave = points[points.length - 1];
                         var angleToSave = currentAngle;
                         savedTransformations.push({point: pointToSave, angle: angleToSave});
-                    }else if(current == "B")
+                    }else if(current == "ABA")
                     {
                         var popped = savedTransformations.pop();
                         currentAngle = popped.angle;
