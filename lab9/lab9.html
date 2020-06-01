@@ -75,7 +75,7 @@
                     if(current == "A")
                     {
                         // the current position is the last one on the points list
-                        drawSegment(points[points.length + 1]);
+                        drawSegment(points[points.length - 1]);
                         currentAngle -= deltaAngle;
                     }/*else if(current == "AB")
                     {
@@ -86,7 +86,7 @@
                     }*/else if(current == "B")
                     {
                         currentAngle += deltaAngle;
-                        var pointToSave = points[points.length + 1];
+                        var pointToSave = points[points.length - 1];
                         var angleToSave = currentAngle;
                         savedTransformations.push({point: pointToSave, angle: angleToSave});
                     }else if(current == "AB")
@@ -101,7 +101,7 @@
             
             function generateSequence()
             {
-                lineLength *= 0.5;
+                lineLength *= 1.5;
                 var nextSequence = "";
                 
                 for(var i=0; i<sequence.length; i++)
