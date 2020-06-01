@@ -1,5 +1,15 @@
 # CMPM163Labs
 
+-lab9
+
+i. ![](lab9/1.png) ![](lab9/2.png) ![](lab9/3.png) ![](lab9/4.png) ![](lab9/5.png)
+
+2. ![](lab9/2_1.png) ![](lab9/2_2.png) ![](lab9/2_3.png) ![](lab9/2_4.png)
+
+3. I was doing the original A->AB, B->A with different sequences. I'm curious on how the image will look with different
+   instruction.
+    
+-------------------------------------
 -lab8
 
 i. ![](lab8/hongkong.jpg)
