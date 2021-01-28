@@ -12,13 +12,13 @@
         <script src="../three.js-master/build/three.js"></script>
         <script>
             // setup the scene
-            var scene = new THREE.Scene();
+            var scen = new THREE.Scene();
             var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
             var renderer = new THREE.WebGLRenderer();
             renderer.setSize(window.innerWidth, window.innerHeight);
             document.body.appendChild(renderer.domElement);
             camera.position.z = 60;
-            
+
             particles = []
             const geo = new THREE.Geometry()
             for(let i=0; i<1000; i++)
@@ -33,14 +33,14 @@
                     0.06,
                     Math.random() * .02 - .01),
                     acceleration: new THREE.Vector3(
-                    Math.random() * .002 - .001, 
-                    Math.random() * .002 - .001, 
+                    Math.random() * .002 - .001,
+                    Math.random() * .002 - .001,
                     0),
                     }
                 particles.push(particle);
                 geo.vertices.push(particle.position)
             }
-            
+
             const mat = new THREE.PointsMaterial({color:0xffffff,size: 0.5});
             mesh = new THREE.Points(geo,mat);
             mesh.position.z = -4;
@@ -48,7 +48,7 @@
 
 
 
-            function animate() 
+            function animate()
             {
                 particles.forEach(p => {
                 p.velocity.add(p.acceleration);
@@ -58,7 +58,7 @@
                 requestAnimationFrame(animate);
                 renderer.render(scene, camera);
             }
-            
+
             animate();
         </script>
     </body>
