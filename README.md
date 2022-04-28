@@ -1,8 +1,9 @@
-# CMPM163Labs
+# CMPM163 - Data Programming for Visualization
+# (Labs)
 
--lab9
+- Lab 9
 
-i. ![](lab9/1.png) ![](lab9/2.png) ![](lab9/3.png) ![](lab9/4.png) ![](lab9/5.png)
+1. ![](lab9/1.png) ![](lab9/2.png) ![](lab9/3.png) ![](lab9/4.png) ![](lab9/5.png)
 
 2. ![](lab9/2_1.png) ![](lab9/2_2.png) ![](lab9/2_3.png) ![](lab9/2_4.png)
 
@@ -10,9 +11,9 @@ i. ![](lab9/1.png) ![](lab9/2.png) ![](lab9/3.png) ![](lab9/4.png) ![](lab9/5.pn
    instruction.
     
 -------------------------------------
--lab8
+- Lab 8
 
-i. ![](lab8/hongkong.jpg)
+1. ![](lab8/hongkong.jpg)
 
 2. ![](lab8/ScreenShot.png)
 
@@ -27,8 +28,9 @@ My Partner Repsonse:
 d increments by 5-10 degrees per building, and then rotates them by that amount so that they're facing the center"
     
 -------------------------------------
--lab7
-A. ![](image/lab7/1.png)  
+- Lab 7
+
+1. ![](image/lab7/1.png)  
       ![](image/lab7/2.png)
 
 2. https://drive.google.com/file/d/1ZaRTYNyMSxbOeZs79oI3t4XJ1JFV3jk5/view?usp=sharing
@@ -48,14 +50,16 @@ A. ![](image/lab7/1.png)
     Step 4 where you get to make a wave with only the shader. It was epic.
     
 -------------------------------------
--lab6
+- Lab 6
+
 1. ![](lab6/screenshot.png)
 
 2. https://www.shadertoy.com/view/wdfBDl
 
 3. https://www.shadertoy.com/view/3slcWr
+
 -------------------------------------
--lab5
+- Lab 5
 
 a.) video link: https://drive.google.com/open?id=1T-nAFOFCe2oApHi9cXM11thiliPizI3G
 
@@ -68,7 +72,7 @@ I first used the part a technique, replace the texture with a cloud picture.
 And add the particle with rain drop texture, and changed the velocity downwards.
 
 -------------------------------------
--lab4
+- Lab 4
 
 Answers:
 24 a.) x = u * (width of texture)
@@ -80,7 +84,7 @@ Answers:
        (3, 6), which is a white grid.
        
 
-video link: https://drive.google.com/file/d/1L0O49qEahsB8Kn-4NYQjwX0nJak6loJa/view?usp=sharing
+Video Link: https://drive.google.com/file/d/1L0O49qEahsB8Kn-4NYQjwX0nJak6loJa/view?usp=sharing
 
 1. The first cube is the leftmost one. I first created a mesh, and I apply a texture on its surface.
 2. The second cube is the middle one. After I created the mesh, I apply the texture on its surface and the normal at last. 
@@ -91,9 +95,9 @@ video link: https://drive.google.com/file/d/1L0O49qEahsB8Kn-4NYQjwX0nJak6loJa/vi
    the uv coordinates by 3 and applied modulo (by 0.5).
 
 -------------------------------------
--lab3
+- Lab 3
 
-video link: https://drive.google.com/file/d/1KMBJpjPNrFZP9a-H9bvyScomGrOxq47O/view?usp=sharing
+Video Link: https://drive.google.com/file/d/1KMBJpjPNrFZP9a-H9bvyScomGrOxq47O/view?usp=sharing
 
 1. I made the first cube by creating a cube and adding phong material (green) on it
 2. It's similar to the first one, but instead of using phong material, I used lambert material (blue).
@@ -102,11 +106,11 @@ video link: https://drive.google.com/file/d/1KMBJpjPNrFZP9a-H9bvyScomGrOxq47O/vi
 4. The process is similar to (3), but the colors are changed.
 
 -------------------------------------
--lab2
+- Lab 2
 
-part 1 video link: https://drive.google.com/open?id=1lYS7XkilJ2G4QZed1QMRvOKfkb292tng
+Part 1 Video Link: https://drive.google.com/open?id=1lYS7XkilJ2G4QZed1QMRvOKfkb292tng
 
-part 2
+Part 2
 ![](image/lab2/part2.png)
 
 -------------------------------------
