@@ -1,5 +1,4 @@
-# CMPM163 - Data Programming for Visualization
-# (Labs)
+# CMPM163 - Data Programming for Visualization (Labs)
 
 - Lab 9
 
