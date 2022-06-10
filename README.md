@@ -1,4 +1,4 @@
-# CMPM163 - Data Programming for Visualization (Labs)
+# CMPM163 - Game Graphics and Real-Time Rendering (Labs)
 
 - Lab 9
 
